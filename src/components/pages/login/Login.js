@@ -59,8 +59,8 @@ const Login = () => {
                     <h2>Explore The Best Tours... Hurry up!!</h2>
                     <form onSubmit={handleSignInEmailPassword} className='d-flex flex-column align-items-center mb-4'>
 
-                        <input onChange={handleEmail} className='my-3 px-1' type="email" placeholder='Email Address' />
-                        <input onChange={handlePassword} className='my-3 px-2 mb-2' type="password" placeholder='password' />
+                        <input required onChange={handleEmail} className='my-3 px-1' type="email" placeholder='Email Address' />
+                        <input required onChange={handlePassword} className='my-3 px-2 mb-2' type="password" placeholder='password' />
                         <Link onClick={handleResetPassword} to='/' className='forgot-p mt-0'><p>Forgot Password?</p></Link>
                         <input className='login-btn my-3 px-2' type="submit" value='LOG IN' />
 

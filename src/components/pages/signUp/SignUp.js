@@ -16,9 +16,6 @@ const SignUp = () => {
 
     const navigate = useNavigate()
     const location = useLocation()
-    const url = location?.state?.from || '/home'
-
-
 
 
     const handleName = (e) => {
@@ -28,19 +25,14 @@ const SignUp = () => {
     const handleEmail = (e) => {
         setEmail(e.target.value)
 
-
-
     }
     const handlePassword = (e) => {
         setPassword(e.target.value)
-
-
     }
 
     const handleRegister = (e) => {
         e.preventDefault()
-        registerWithEmailPassword(email, password, name, navigate, url)
-
+        registerWithEmailPassword(email, password, name, navigate, location)
     }
 
     return (
@@ -58,7 +50,7 @@ const SignUp = () => {
                         <input onBlur={handlePassword} type="password" required placeholder="Enter Password" /><br />
                         <input className="register-btn" type="submit" value="Register" /><br />
                     </form>
-                    <span>I have an account <Link to="/">Login</Link></span><br />
+                    <span>I have an account !! <Link to="/">Login</Link></span><br />
 
 
                 </div>

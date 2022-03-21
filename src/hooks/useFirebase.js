@@ -31,14 +31,14 @@ const useFirebase = () => {
     }
 
     // register email password
-    const registerWithEmailPassword = (email, password, name, history, url) => {
+    const registerWithEmailPassword = (email, password, name, navigate, location) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 setUser(userCredential.user)
                 setError("")
                 updateUserName(name)
-                history?.push(url)
+                navigate(location?.state?.from || '/home')
                 window.location.reload();
             })
             .catch((error) => {
@@ -51,14 +51,14 @@ const useFirebase = () => {
     }
 
     // login email password
-    const signInWithEmailPassword = (email, password, history, url) => {
+    const signInWithEmailPassword = (email, password, navigate, url) => {
         setIsLoading(true)
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
                 setUser(user)
                 setError("")
-                history?.push(url)
+                navigate(url)
                 window.location.reload();
             })
             .catch(() => {

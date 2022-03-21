@@ -55,4 +55,8 @@
   border: none;
   font-size: 22px;
 }
+
+.login-btn :hover {
+  background: #0019d1;
+}
 /*# sourceMappingURL=login.css.map */
