@@ -1,0 +1,53 @@
+.register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* background: linear-gradient(90deg, #6271ff, #e739f5); */
+}
+
+.my-cart {
+  width: 400px;
+  background: #c4c4c4;
+  text-align: center;
+  margin: 50px 0;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: -1px 15px 21px -6px rgba(169, 49, 49, 0.61);
+  -webkit-box-shadow: -1px 15px 21px -6px rgba(169, 49, 49, 0.61);
+  -moz-box-shadow: -1px 15px 21px -6px rgba(169, 49, 49, 0.61);
+}
+
+.register-form input {
+  padding: 7px 14px;
+  width: 300px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  background-color: #dfdfdf;
+}
+
+.register-btn {
+  width: 130px;
+  font-size: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#8b1010), to(#101079));
+  background: linear-gradient(90deg, #8b1010, #101079);
+  cursor: pointer;
+  color: white;
+}
+
+.register-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#f30606), to(#0000f1));
+  background: linear-gradient(90deg, #f30606, #0000f1);
+  color: white;
+}
+/*# sourceMappingURL=SignUp.css.map */
